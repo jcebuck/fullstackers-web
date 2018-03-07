@@ -1,22 +1,42 @@
-/*!
- * Start Bootstrap - Agency v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
- */
+
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ff993f;;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
 
 p {
   line-height: 1.75; }
 
 a {
-  color: #fed136; }
+  color: #0099F7; /* dark blue */ } }
   a:hover {
-    color: #fec503; }
+    color: #0099F7; /* dark blue */ }
+
+.orange {
+  color: #ff993f;
+}
 
 .text-primary {
-  color: #fed136 !important; }
+  color: #0099F7 !important; }
 
 h1,
 h2,
@@ -54,12 +74,13 @@ section {
   padding: 20px 40px; }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136; }
+  background-color: #ff993f; /* peach color */
+  border: 4px solid #fff !important;
+  color: #fff; }
   .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-    background-color: #fec810 !important;
-    border-color: #fec810 !important;
-    color: white; }
+    background-color: #ec852a !important;
+    border: 4px solid #fff !important;
+    color: #fff; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important; }
 
@@ -92,10 +113,10 @@ body {
     background-color: #fed136;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   #mainNav .navbar-brand {
-    color: #fed136;
+    color: white;
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; }
     #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: #fec503; }
+      color: #0099F7; /* dark blue */ }
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
     font-weight: 400;
@@ -104,7 +125,7 @@ body {
     color: white;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-      color: #fed136; }
+      color: #0099F7; /* dark blue */ }
 
 @media (min-width: 992px) {
   #mainNav {
@@ -116,7 +137,7 @@ body {
     border: none;
     background-color: transparent; }
     #mainNav .navbar-brand {
-      font-size: 1.75em;
+      font-size: 1.95em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s; }
@@ -132,8 +153,8 @@ body {
 
 header.masthead {
   text-align: center;
-  color: white;
-  background-image: url("../img/header-bg.jpg");
+  color: #0099F7; /* dark blue */
+  background-image: url("../img/web-agency-portugal.jpeg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -195,7 +216,7 @@ header.masthead {
       -moz-transition: all ease 0.5s;
       transition: all ease 0.5s;
       opacity: 0;
-      background: rgba(254, 209, 54, 0.9); }
+      background: rgba(105, 167, 242, 0.25); }
       #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
         opacity: 1; }
       #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
@@ -290,6 +311,30 @@ header.masthead {
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
         background-color: #212529; }
+
+
+        #whyus{
+            background-color: #fff !important;
+            padding-top: 5.5em;
+        }
+
+        #team {
+          background-color: lightgrey !important;
+        }
+
+        #portfolio {
+            padding-top: 5.5em;
+           background-color: rgba(105, 167, 242, 0.25) !important;
+            color: #fff;
+        }
+
+        #portfolio h3 {
+            color: #fff!important;
+        }
+
+        #services {
+           padding-top: 5.5em;
+        }
 
 .timeline {
   position: relative;
@@ -441,7 +486,7 @@ header.masthead {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../img/map-image.png");
+  background-image: url("../img/the-fullstackers.jpeg");
   background-repeat: no-repeat;
   background-position: center; }
   section#contact .section-heading {
@@ -508,4 +553,4 @@ ul.social-buttons {
     outline: none;
     background-color: #212529; }
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-      background-color: #fed136; }
+      background-color: #ff993f; }
